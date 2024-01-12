@@ -1,0 +1,79 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {}
+    },
+    "basePath": "/api",
+    "paths": {
+        "/trades/latest-report": {
+            "get": {
+                "description": "retrieves the latest trades report for financial instruments",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Objects"
+                ],
+                "summary": "HandleLatestTrades",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/api.TradesReport"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "api.LatestTrade": {
+            "type": "object",
+            "properties": {
+                "close": {
+                    "description": "@inject_tag: json:\"close\"",
+                    "type": "number"
+                },
+                "date_en": {
+                    "description": "@inject_tag: json:\"date_en\"",
+                    "type": "string"
+                },
+                "high": {
+                    "description": "@inject_tag: json:\"high\"",
+                    "type": "number"
+                },
+                "instrument_name": {
+                    "description": "@inject_tag: json:\"instrument_name\"",
+                    "type": "string"
+                },
+                "low": {
+                    "description": "@inject_tag: json:\"low\"",
+                    "type": "number"
+                },
+                "open": {
+                    "description": "@inject_tag: json:\"open\"",
+                    "type": "number"
+                },
+                "trade_id": {
+                    "description": "@inject_tag: json:\"trade_id\"",
+                    "type": "integer"
+                }
+            }
+        },
+        "api.TradesReport": {
+            "type": "object",
+            "properties": {
+                "latest_trades": {
+                    "description": "@inject_tag: json:\"latest_trades\"",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/api.LatestTrade"
+                    }
+                }
+            }
+        }
+    }
+}

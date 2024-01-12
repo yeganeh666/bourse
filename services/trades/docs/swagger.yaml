@@ -1,0 +1,53 @@
+basePath: /api
+definitions:
+  api.LatestTrade:
+    properties:
+      close:
+        description: '@inject_tag: json:"close"'
+        type: number
+      date_en:
+        description: '@inject_tag: json:"date_en"'
+        type: string
+      high:
+        description: '@inject_tag: json:"high"'
+        type: number
+      instrument_name:
+        description: '@inject_tag: json:"instrument_name"'
+        type: string
+      low:
+        description: '@inject_tag: json:"low"'
+        type: number
+      open:
+        description: '@inject_tag: json:"open"'
+        type: number
+      trade_id:
+        description: '@inject_tag: json:"trade_id"'
+        type: integer
+    type: object
+  api.TradesReport:
+    properties:
+      latest_trades:
+        description: '@inject_tag: json:"latest_trades"'
+        items:
+          $ref: '#/definitions/api.LatestTrade'
+        type: array
+    type: object
+info:
+  contact: {}
+paths:
+  /trades/latest-report:
+    get:
+      consumes:
+      - application/json
+      description: retrieves the latest trades report for financial instruments
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/api.TradesReport'
+      summary: HandleLatestTrades
+      tags:
+      - Objects
+swagger: "2.0"

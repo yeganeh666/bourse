@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package reports_api;
+
+option go_package = "./reports/api";
+
+// Reporting service to retrieve trade details for financial instruments.
+service ReportService {
+  // Retrieves the latest trades report for financial instruments.
+  rpc GetLatestTrades(EmptyRequest) returns (TradesReport);
+}
+
+// Empty message used as input for operations that don't require any input.
+message EmptyRequest {}
+
+// A trade report providing details of a specific trade for a financial instrument.
+message LatestTrade {
+  // @inject_tag: json:"instrument_name"
+  string instrument_name = 1; // Name of the financial instrument.
+  // @inject_tag: json:"date_en"
+  string date_en = 2;         // Date of the trade in EN format.
+  // @inject_tag: json:"open"
+  double open = 3;            // Opening price of the trade.
+  // @inject_tag: json:"high"
+  double high = 4;            // Highest price during the trade.
+  // @inject_tag: json:"low"
+  double low = 5;             // Lowest price during the trade.
+  // @inject_tag: json:"close"
+  double close = 6;           // Closing price of the trade.
+  // @inject_tag: json:"trade_id"
+  int32 trade_id = 7; // ID of the trade
+}
+
+message TradesReport{
+  // @inject_tag: json:"latest_trades"
+  repeated LatestTrade latest_trades = 1; // Latest trades
+}

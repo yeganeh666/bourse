@@ -1,0 +1,11 @@
+service_name: "trades"
+version: "v1.0.0"
+grpc_port: 26000
+http_port: 8080
+http_host: "localhost"
+postgres:
+  host: "localhost"
+  port: 5432
+  db: "bourse"
+  user: "postgres"
+  pass: "postgres"

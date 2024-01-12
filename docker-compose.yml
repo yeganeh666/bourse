@@ -1,0 +1,36 @@
+version: '3'
+
+networks:
+  bourse:
+
+services:
+
+  trades:
+    build:
+      context: .
+      dockerfile: ./services/trades/deploy/Dockerfile
+    ports:
+      - "8080:8080"
+      - "26000:26000"
+    volumes:
+      - ./services/trades/configs/config.yaml:/app/trades/configs/config.yaml
+    networks:
+      - bourse
+
+  postgres:
+    image: docker.arvancloud.com/postgis/postgis:12-master
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: bourse
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - bourse
+
+volumes:
+  postgres-data:
+
