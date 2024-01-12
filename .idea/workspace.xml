@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="06d5b448-19f0-4f9b-aa20-5f1dd54f367e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/report.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/cli.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/doc.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/docker-service.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/fmt.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/proto.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/run.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/api/report.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/api/src/report.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/api/src/report_grpc.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/cmd/app/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/cmd/cli/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/configs/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/configs/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/configs/postgres.secret" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/deploy/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/deploy/version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/docs/docs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/docs/swagger.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/docs/swagger.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/handlers/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/handlers/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/handlers/trades.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/repository/entity.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/repository/reports.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/repository/repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/services/register.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/trades/services/reports.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/configext/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/contextext/extentions.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/contextext/extentions_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/dispose/dispose.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/envext/credential.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/envext/env.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/envext/modes.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/errors/cast.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/errors/cast_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/errors/code.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/errors/code_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/errors/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/errors/error_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/errors/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/errors/new.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/gormext/extension.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/gormext/gorm.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/grpcext/connection.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/grpcext/consts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/grpcext/context.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/grpcext/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/grpcext/helpers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/grpcext/static_token.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/httpext/autorize.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/httpext/bind.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/httpext/consts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/httpext/cors.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/httpext/redirect.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/httpext/send.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/i18next/i18n.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/jsonext/consts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/netext/port.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/service/health.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/service/serve.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/service/service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/stringsext/consts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/stringsext/extention.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/stringsext/extention_test.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///snap/go/current" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2arHDjKjkEMCZrTC9lVVY19GTfB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/home/yeganeh666/GolandProjects/mabna",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "go.vgo"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/scripts" />
+      <recent name="$PROJECT_DIR$/services/trades" />
+      <recent name="$PROJECT_DIR$/shared" />
+      <recent name="$PROJECT_DIR$/services/reports/handlers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/services/reports/cmd/api" />
+      <recent name="$PROJECT_DIR$/services/reports/services" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
